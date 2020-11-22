@@ -1,0 +1,8 @@
+.container-fluid .col-md-12
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 87px;
+
+}

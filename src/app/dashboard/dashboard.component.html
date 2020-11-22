@@ -1,0 +1,255 @@
+<app-header></app-header>
+
+<!-- header end -->
+<div class="container-fluid bg-image">
+</div>
+
+<section class="container-fluid section2 width-detail">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2>Welcome TO ABC Wrap</h2>
+      <hr>
+      <p>
+        For contractors, project owners, and developers, Abc is the market leader in owner and contractor wrap-up
+        programs as well as wrap up bonding and other home building insurance products and risk assessment services
+      </p>
+      <p>
+        We field the largest and most trusted network of construction experts anywhere in the world For contractors,
+        project owners, and developers, Abc is the market leader in owner and contractor wrap-up programs as well as
+        wrap up bonding and other home building insurance products and risk assessment services
+      </p>
+      <div class="imageScroller">
+        <img src="../assets/images/Scroller.png" alt="">
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<!-- //background image attachement end -->
+
+
+
+<section class="section3 container-fluid">
+  <div class="row">
+    <div class="col-md-7 col-12 border-right">
+      <div class="row mt-50">
+        <div class="col-md-12 pd-0 text-center">
+          <hr>
+          <img src="../assets/images/abc-links-img.png" class="linkCss img-fluid" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-12 align-item">
+          <img src="../assets/images/dolor.svg" alt="">
+          <span>
+            Wrap Up 101
+          </span>
+        </div>
+        <div class="col-md-4 col-12 align-item">
+          <img src="../assets/images/filling.svg" alt="">
+          <span>
+            Office Location Map
+          </span>
+        </div>
+        <div class="col-md-4 align-item col-12">
+          <img src="../assets/images/filling.svg" alt="">
+          <span>
+            Electronic Filling of Wrap Up Bond
+          </span>
+        </div>
+        <div class="infoButton col-md-12 text-center">
+          <button type="button">Request Information</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 col-12 text-center formCss">
+      <img src="../assets/images/logo.png" class="img-fluid" alt="">
+
+      <form #formRef="ngForm">
+        <h3>LOGIN</h3>
+
+        <input type="email" class="form-control" name="email" [(ngModel)]="loginObject.email" #em="ngModel" required/>
+        <div class="text-danger error-msg" *ngIf="!em.valid && em.touched">Please enter email</div>
+                <br>
+
+        <input type="text" class="form-control" name="password" [(ngModel)]="loginObject.password" #pass="ngModel" required/>
+        <span class="text-danger error-msg" *ngIf="!pass.valid && pass.touched">Please enter Password</span>
+
+        <!-- <br> -->
+        <div class="btn-submit text-right bigScreen">
+          <a href="">Forgot Your Password ?</a>
+          <button type="button" class="btn btn-primary" (click)="SubmitForm()" [disabled]="!formRef.valid">LOGIN</button>
+        </div>
+
+        <div class="btn-submit small-screen">
+          <button type="button" class="btn btn-primary" (click)="SubmitForm()" [disabled]="!formRef.valid">LOGIN</button>
+          <a href="#">Forgot Your Password ?</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="container-fluid section2 brandSection">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2>Industry Links</h2>
+      <hr class="Insustry_link">
+
+      <!--     
+        <div class="imageScroller">
+          <img src="../assets/images/Scroller.png" alt="">
+        </div> -->
+    </div>
+    <div class="col-md-3 col-6 ">
+      <div class="card box-shadow p-3 mb-5 bg-white rounded align-items-center">
+        <div class="card-body"> <img src="../assets/images/best.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6">
+
+      <div class="card box-shadow p-3 mb-5 bg-white rounded align-items-center">
+        <div class="card-body"> <img src="../assets/images/cashea.png" class="img-fluid" alt="">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="card box-shadow p-3 mb-5 bg-white rounded align-items-center">
+        <div class="card-body">
+          <img src="../assets/images/moody.png" alt="" class="img-fluid">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="card box-shadow p-3 mb-5 bg-white rounded align-items-center">
+        <div class="card-body">
+          <img src="../assets/images/fitch.png" alt="" class="img-fluid">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3 col-6">
+
+      <div class="card box-shadow p-3 mb-5 bg-white rounded align-items-center">
+        <div class="card-body">
+          <img src="../assets/images/sp.png" alt="" class="img-fluid">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="card box-shadow p-3 mb-5 bg-white rounded align-items-center">
+        <div class="card-body">
+          <img src="../assets/images/thesurety.png" alt="" class="img-fluid">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="card box-shadow p-3 mb-5 bg-white align-items-center rounded">
+        <div class="card-body">
+          <img src="../assets/images/sio.png" alt="" class="img-fluid">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3 col-6">
+
+      <div class="card box-shadow p-3 mb-5 bg-white rounded align-items-center">
+        <div class="card-body">
+          <img src="../assets/images/fiscal.png" alt="" class="img-fluid">
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+</section>
+
+
+<section class="section3 container-fluid professionalInsight">
+  <div class="row">
+    <div class="col-md-6 col-12 border-right text-center">
+      <h3>Professional Insights</h3>
+      <img class="text-center" class="img-fluid mb-33" src="../assets/images/covid19.png" alt="">
+   </div>
+    <div class="col-md-6 col-12">
+      <h3>News and HighLights</h3>
+      <ul class="NewsHighlight">
+        <li >2020 April Wrap Up Market Update - Contact</li>
+        <li >SDI COVID-19</li>
+        <li>Wrap Up Market Update</li>
+     
+      </ul>
+
+ </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container-fluid">
+  <div class="display-flex align-items-center">
+    <ul class="foote_bottom_ul_amrc left-menu">
+      <li><a href="#">AWS Support</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Company</a></li>
+      <li><a href="#">Aon.com</a></li>
+      <li><a href="#">Wrap Up Partners</a></li>
+    </ul>
+
+    <div class="termCpntent">
+          <ul class="foote_bottom_ul_amrc text-right">
+      <li><a href="#">Term & Condition</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Legal</a></li>
+      <li>2020 ABC Company ltd </li>
+
+    </ul>
+    </div>
+    <div class="icon-class"> <a href="https://www.facebook.com/bootsnipp"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://twitter.com/bootsnipp"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://plus.google.com/+Bootsnipp-page"><i class="fab fa-linkedin"></i></a>
+     
+    </div>
+  </div>
+    <!-- <ul class="foote_bottom_ul_amrc text-right">
+      <li><a href="#">Term & Condition</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Legal @ 2020</a></li>
+    </ul> -->
+
+ 
+    <!--foote_bottom_ul_amrc ends here-->
+    <!-- <p class="text-center">Copyright @2017 | Designed With by <a href="#">Your Company Name</a></p> -->
+
+    <!--social_footer_ul ends here-->
+  </div>
+
+</footer>
